@@ -15,6 +15,10 @@
 #define RAISE 2
 #define ADJUST 3
 
+&nice_view_spi {
+  cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
+};
+
 &soft_off {
     hold-time-ms = <1>; // Only turn off it the key is held for 5 seconds or longer.
 };
